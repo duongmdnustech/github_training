@@ -1,5 +1,5 @@
 function func() {
-    console.log("helo112");
+    console.log("helo81132");
 }
 
 func();
