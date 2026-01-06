@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang ="vn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Github Training</title>
+    </head>
+    <body>
+        <style>
+            header {
+                font-weight: 500;
+                background-color: lightskyblue;
+                padding: 10px;
+                text-align: center;
+            }
+            footer {
+                background-color: aquamarine;
+                padding: 10px;
+                text-align: center;
+            }
+            main {
+                margin: 20px;
+                text-align: center;
+                justify-items: center;
+                align-items: center;
+                width: 100vw;
+            }
+            h2 {
+                color: darkblue;
+                text-align: left;
+                align-self: flex-start;
+            }
+
+            .phase-img {
+                width: 30vw;
+            }
+
+            .code-group {
+                align-self: flex-start;
+                justify-items:baseline;
+                text-align: left;
+                padding: 10px;
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+            }
+            
+            .single-line-code {
+                border: 1px gray solid;
+                border-radius: 20px;
+                padding: 5px;
+                background-color: gray;
+            }
+
+        </style>
+        <header><strong>Github Training</strong></header>
+        <main>
+            <h1>Welcome to Github Training</h1>
+            <h2>Phase 1: Introduction to Git</h2>
+            <p>This is the first phase of the training where we will learn the basics of Git.</p>
+            <div>Documents: <a href="https://www.w3schools.com/" target="_blank">W3Schools</a></div>
+            <img class="phase-img" usemap="#react-img" src="https://miro.medium.com/1*qm99PBZm_YQu0MQ1tvJD9A.png" alt="react" />
+            <h2>Phase 2: Introduction to Github</h2>
+            <p>This is the second phase of the training where we will learn how to use Github.</p>
+            <div>Documents: <a href="https://docs.github.com/en/get-started" target="_blank">GitHub Docs</a></div>
+            <map name="react-img" >
+                <area shape="default" alt="React Logo" href="https://reactjs.org/" target="_blank" title="React Course">
+            </map>
+            <h2>Phase 3: Git Command</h2>
+            <p>These are some examples of git command</p>
+            <div class="code-group">
+                <div>
+                    <h4>Add new file to Staging Area</h4>
+                    <code class="single-line-code">git add {file}</code>
+                    <h4>Commit changes</h4>
+                    <code class="single-line-code">git commit -m {message}</code>
+                    <h4>Push changes to remote repository</h4>
+                    <code class="single-line-code">git push {remote} {remote branch}</code>
+                </div>
+
+                <div>
+                    <h4>Example: You have a change in file Card.jsx and wanna push this to remote</h4>
+                    <pre>
+                    <code class="code-block">
+# add file to Index
+git add Card.jsx 
+# commit changes that have been added to index with message
+git commit -m "Update Card Component: [Update color]"
+# push code to branch main in remote origin
+git push origin main
+                    </code></pre>
+                </div>
+            </div>
+        </main>
+        <footer><em>DuongMD</em></footer>
+    </body>
+</html>

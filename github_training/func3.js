@@ -1,2 +1,2 @@
-x = 4
+x = 42
 console.log(x)
